@@ -31,7 +31,6 @@ You must:
 - Include **CRUD functionality** in a **RESTful API** for at least one of those models
 - **Consume your own API** by making your front-end with React
 - **Craft thoughtful user stories together**, as a team
-- **Create a project board** and use it to manage team workflow
 - **Manage team contributions and collaboration** using a standard git workflow on GitHub
 - **Designate one team member** to be in charge of managing team git workflow (the Git Dictator)
 - Layout and style your front-end with **clean & well-formatted CSS**
@@ -80,7 +79,8 @@ You must:
 - **Build wireframes**
 - **Write a list of 3rd party technologies** that you will be using and need to explore before you dive head first into your project
 - **Write a project proposal** to present to your instructor
-- **Create a project board** that outlines what steps you will need to take and the order you plan to take them in. [Here's an example!](https://github.com/jlr7245/healthify/projects/1)
+  - Your proposal should include: project summary / idea, wireframes, user stories, ERDs, additional requirement your group will tackle, and a project timeline. 
+
 - **Define a styleguide** with your team. What fonts will you use, what color schemes? Be consistent with the styling.
 - **Organize the project in terms of the directory structure etc.**
 
@@ -90,7 +90,7 @@ You must:
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
 | **2/14**    | Start thinking of ideas with your group               |
-| **2/16**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, and a project board completed for us to review.           |
+| **2/16**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirement you will tackle, and a project timeline for us to review.           |
 | **2/19**   | **President's Day!** But you should still be working...                                                         |
 | **2/20-2/22**     | Work on projects!                                                                                               |
 | **2/23**            | **PROJECT PRESENTATIONS!**                 |
