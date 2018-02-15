@@ -1,6 +1,6 @@
 ## Team Bonding/Project Prep
 
-It's important to take time to fuse as a team. To get you started, please tackle the following, by **End of Day Wednesday**.
+It's important to take time to fuse as a team. To get you started, please tackle the following, by **End of Day Thursday**.
 
 **PLEASE NOTE:** All of the steps below are **MANDATORY**
 
@@ -24,6 +24,7 @@ Have each person go to their Project Two Github Repo and walk the other team mem
 
 ### Project Three Brainstorm
 
-Brainstorm some project ideas. Remember, there's no bad ideas in brainstorming, so be open to possibilities.
+- Pick a group name! Be ready to explain why you chose that name.
+- Brainstorm some project ideas. Remember, there's no bad ideas in brainstorming, so be open to possibilities.
 
 You will present your project proposals on Friday 2/16!
