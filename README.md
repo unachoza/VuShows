@@ -89,7 +89,7 @@ You must:
 
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
-| **2/14**    | Start thinking of ideas with your group               |
+| **2/15**    | Start thinking of ideas with your group               |
 | **2/16**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirement you will tackle, and a project timeline for us to review.           |
 | **2/19**   | **President's Day!** But you should still be working...                                                         |
 | **2/20-2/22**     | Work on projects!                                                                                               |
