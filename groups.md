@@ -1,31 +1,31 @@
 ## Groups
 
-### Group 1
+### Group 1 ( JACK )
 - Cash 
 - Andrew 
 - Keith E. 
 - Jen
 
-### Group 2
+### Group 2 ( Flying Orange )
 - Roxy
 - Ark
 - Leon
 - Anatoily 
 
-### Group 3
+### Group 3 ( CodeBrew )
 - Greg 
 - Linda
 - Niko
 - Rashad
 
-### Group 4
+### Group 4 ( Blunt Sanjaya AKA Trouble Love )
 - Keith M. 
 - Jorge 
 - Sanjaya 
 - Tim 
 - Garrett 
 
-### Group 5
+### Group 5 ( Mess )
 - Maya 
 - Eddie 
 - Steven 
