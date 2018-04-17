@@ -1,6 +1,8 @@
 # Rubric
 
-## Technical Requirements 
+
+
+## Technical Requirements (76 points)
 
 | Requirement            | Description                                                                                                                                       | Max score | Points earned  |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------|---|
@@ -15,7 +17,7 @@
 | Additional Requirement | Your application includes one of the following additional requirements: user authentication, third-party API, a new NPM package, or unit testing. | 8         |   |
 | Project Deployed       | The app should be deployed to Heroku and usable.                                                                                                  | 8         |   |
 
-## Teamwork Skills Requirements
+## Teamwork Skills Requirements (30 points)
 
 Each team member will review their teammates on these skills, and their average scores will be put on a 0-10 scale.
 
