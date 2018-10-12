@@ -1,47 +1,39 @@
 ## Groups
 
-### Group 1 ( JACK )
-- Cash 
-- Andrew 
-- Keith E. 
-- Jen
+### Group 1
+- Evan
+- Lisa
+- Brian
 
-### Group 2 ( Flying Orange )
-- Roxy
-- Ark
-- Leon
-- Anatoily 
+### Group 2
+- Eric
+- Daniel
+- Misha
 
-### Group 3 ( CodeBrew )
-- Greg 
-- Linda
-- Niko
-- Rashad
+### Group 3
+- Zach
+- Danny
+- Shaun
 
-### Group 4 ( Blunt Sanjaya AKA Trouble Love )
-- Keith M. 
-- Jorge 
-- Sanjaya 
-- Tim 
-- Garrett 
+### Group 4
+- Alex
+- Tyler
+- Tanner
 
-### Group 5 ( Mess )
-- Maya 
-- Eddie 
-- Steven 
-- James 
-- Skyler 
+### Group 5
+- Christian
+- Arthur
 
 
 ## Group Leaders
 
-### Tims 
+### Jason 
 - Group 1
 - Group 2
 
-### Drake
+### Celeste
 - Group 3 
 - Group 4
 
-### Dominic
+### Lauren
 - Group 5
