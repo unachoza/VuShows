@@ -35,7 +35,7 @@ Make it work, and make it awesome.
 
 You must:
 
-- **Use Postgres (pg-promise) & Express** to build an API and a **React** front-end that consumes it
+- **Use sequelize & Express** to build an API and a **React** front-end that consumes it
 - **Create an Express API using, at minimum, two related models**
 - Include **CRUD functionality** in a **RESTful API** for at least one of those models
 - **Consume your own API** by making your front-end with React
