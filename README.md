@@ -135,11 +135,10 @@ You must:
 
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
-| **2/15**    | Start thinking of ideas with your group               |
-| **2/16**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirement you will tackle, and a project timeline for us to review.           |
-| **2/19**   | **President's Day!** But you should still be working...                                                         |
-| **2/20-2/22**     | Work on projects!                                                                                               |
-| **2/23**            | **PROJECT PRESENTATIONS!**                 |
+| **10/12**    | Start thinking of ideas with your group               |
+| **10/15**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirement you will tackle, and a project timeline for us to review.           |                                                   |
+| **10/15-10/19**     | Work on projects!                                                                                               |
+| **10/22**            | **PROJECT PRESENTATIONS!**                 |
 
 ---
 
