@@ -181,8 +181,33 @@ In the body of the ticket include:
 ###### Who are my group members and assigned instructor?
 
 #### Group 1 - TBD (Jason)
-#### Group 1 - TBD (Celeste)
-#### Group 1 - TBD (Lauren)
+
+- Evan
+- Lisa
+- Brian
+
+#### Group 2 - TBD (Celeste)
+
+- Eric
+- Daniel
+- Misha
+
+#### Group 3 - TBD (Lauren)
+
+- Zach
+- Danny
+- Shaun
+
+#### Group 4 - TBD
+
+- Alex
+- Tyler
+- Tanner
+
+#### Group 5 - TBD
+
+- Christian
+- Arthur
 
 ---
 
