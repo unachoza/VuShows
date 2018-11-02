@@ -36,14 +36,6 @@ Each team member will review their teammates on these skills, and their average 
 | This team member met or exceeded all expectations of the group? *                                | 10        |   |
 | This team member assisted other team members to resolve technical and/or non-technical issues. * | 10        |   |
 
-## Creativity (16 points)
-
-
-| Requirement                                                                                      | Max score | Points earned  |
-|--------------------------------------------------------------------------------------------------|-----------|----------------|
-| Design        		| Visually interesting design   | 8  |   |
-| Components        | All app components are thoughtfully styled.  | 4  |   |
-| Design         	| Added personal touch      | 8  |   |
 
 ## Code Quality (22 points)
 
