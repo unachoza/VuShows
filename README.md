@@ -134,10 +134,11 @@ You must:
 
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
-| **10/12**    | Start thinking of ideas with your group               |
-| **10/15**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirement you will tackle, and a project timeline for us to review.           |                                                   |
-| **10/15-10/19**     | Work on projects!                                                                                               |
-| **10/22**            | **PROJECT PRESENTATIONS!**                 |
+| **11/2**    | Start thinking of ideas with your group               |
+| **11/5**    | **WIREFRAMES/PROJECT PROPOSALS**   Work on wireframes, user stories, ERDs, additional requirement you will tackle, and a project timeline for us to review.            |
+| **11/5**   | **PROJECT PROPOSALS!**           |                                                   |
+| **11/5-11/12**     | Work on projects!                                                                                               |
+| **11/13**            | **PROJECT PRESENTATIONS!**                 |
 
 ---
 
