@@ -108,7 +108,7 @@ You must:
   * You can choose whether you want to whiteboard the wireframes, use some program or just sketch it out with pencil and paper.
 - Routes: Design the HTTP route architecture of your application using  [RESTful conventions](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services)
 
-- Set up a separate GitHub repository __(NOT this one)__ and **project board** (use the template provided) for your project
+- Set up a separate GitHub repository __(NOT this one)__ and **trello board** for your project
 - Schema & Seeds: When you are confident with your ERD, define its tables in SQL and put into a schema file. For easier testing, write a seed file as well to insert sample data to your database.
 - Models: Write a model with methods that perform CRUD on the database.
 
