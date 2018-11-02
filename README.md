@@ -179,34 +179,31 @@ In the body of the ticket include:
 
 ###### Who are my group members and assigned instructor?
 
-#### Group 1 - TBD (Jason)
+#### Group 1 -  (Joe)
 
-- Evan
-- Lisa
-- Brian
+ - Matt
+ - Dillon
+ - Josie
+ - Sarah
 
-#### Group 2 - TBD (Celeste)
+#### Group 2 - (Steve)
 
-- Eric
-- Daniel
-- Misha
+ - Sami
+ - Jonathan
+ - Aaron
+ 
 
-#### Group 3 - TBD (Lauren)
+#### Group 3 - (Steve)
 
-- Zach
-- Danny
-- Shaun
+- Amanda
+- Ross
+- Cynthia
 
-#### Group 4 - TBD
-
-- Alex
-- Tyler
-- Tanner
-
-#### Group 5 - TBD
-
-- Christian
-- Arthur
+#### Group 4 - (Rachel)
+ - Kozak
+ - Arleen
+ - Arianna
+ - Sam
 
 ---
 
