@@ -106,12 +106,11 @@ You must:
 - Database: Draw out the tables and columns you plan to use in your database (ERDs - Entity Relationship Diagram)
 - Wireframes: Detail the flow of your app through simple wireframes
   * You can choose whether you want to whiteboard the wireframes, use some program or just sketch it out with pencil and paper.
-  * Refer to the [todo app wireframe](./wireframes.md) for an example of what we expect!
 - Routes: Design the HTTP route architecture of your application using  [RESTful conventions](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services)
 
 - Set up a separate GitHub repository __(NOT this one)__ and **project board** (use the template provided) for your project
 - Schema & Seeds: When you are confident with your ERD, define its tables in SQL and put into a schema file. For easier testing, write a seed file as well to insert sample data to your database.
-- Models: Write a model with methods that use _async / await_ to perform CRUD on the database.
+- Models: Write a model with methods that perform CRUD on the database.
 
 ---
 
