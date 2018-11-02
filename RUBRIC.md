@@ -36,19 +36,19 @@ Each team member will review their teammates on these skills, and their average 
 | This team member assisted other team members to resolve technical and/or non-technical issues. * | 5        |   |
 
 
-## Code Quality (22 points)
+## Code Quality (5 points)
 
 | Requirement                                                                                      | Max score | Points earned  |
 |--------------------------------------------------------------------------------------------------|-----------|----------------|
-| Code adheres to the AirBnb/Google style guide       | 8        |   |
-| Variables are semantically named          | 8        |   |
-| Comments are accurate and descriptive     | 6        |   |
+| Code adheres to the AirBnb/Google style guide       | 2        |   |
+| Variables are semantically named          | 2        |   |
+| Comments are accurate and descriptive     | 1        |   |
 
-## Heroku Deployment (8 points)
+## Heroku Deployment (5 points)
 
 
 | Requirement                                                                                      | Max score | Points earned  |
 |--------------------------------------------------------------------------------------------------|-----------|----------------|
-| Application is fully deployed and operational on Heroku     | 8        |   |
+| Application is fully deployed and operational on Heroku     | 5        |   |
 
-## Total Score (XX points)
+## Total Score (100 points)
