@@ -1,6 +1,6 @@
 # Rubric
 
-## Project Workflow (XX points)
+## Project Workflow (38 points)
 
 | Requirement            | Description                                                                                                                                       | Max score | Points earned  |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------|---|
@@ -12,7 +12,7 @@
 | Submitted project via GitHub Enterprise         | Submitted project **on time** via GitHub Enterprise.     | 2         |   |
 | Github Project         | Used kanban board as project management tool throughout project to establish sprints, assign tasks and stay on schedule.     | 8         |   |
 
-## Technical Requirements (38 points)
+## Technical Requirements (60 points)
 
 | Requirement            | Description                                                                                                                                       | Max score | Points earned  |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------|---|
