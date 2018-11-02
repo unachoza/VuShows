@@ -25,16 +25,15 @@
 | ESLint                 | All code is linted and abides by the Airbnb JavaScript styleguide.                                                                                | 8         |   |
 | Additional Requirement | Your application includes one of the following additional requirements: user authentication, third-party API, a new NPM package, or unit testing. | 8         |   |
 
-## Teamwork Skills Requirements (30 points)
+## Teamwork Skills Requirements (10 points)
 
 Each team member will review their teammates on these skills, and their average scores will be put on a 0-10 scale.
 
 
 | Requirement                                                                                      | Max score | Points earned  |
 |--------------------------------------------------------------------------------------------------|-----------|----------------|
-| This team mate communicated their ideas and provided clear feedback on the ideas of others       | 10        |   |
-| This team member met or exceeded all expectations of the group? *                                | 10        |   |
-| This team member assisted other team members to resolve technical and/or non-technical issues. * | 10        |   |
+| This team mate communicated their ideas and provided clear feedback on the ideas of others       | 5        |   |
+| This team member assisted other team members to resolve technical and/or non-technical issues. * | 5        |   |
 
 
 ## Code Quality (22 points)
