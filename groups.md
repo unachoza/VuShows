@@ -1,39 +1,31 @@
-## Groups
+## Project Groups
 
-### Group 1
-- Evan
-- Lisa
-- Brian
+###### Who are my group members and assigned instructor?
 
-### Group 2
-- Eric
-- Daniel
-- Misha
+#### Group 1 -  (Joe)
 
-### Group 3
-- Zach
-- Danny
-- Shaun
+ - Matt
+ - Dillon
+ - Josie
+ - Sarah
 
-### Group 4
-- Alex
-- Tyler
-- Tanner
+#### Group 2 - (Steve)
 
-### Group 5
-- Christian
-- Arthur
+ - Sami
+ - Jonathan
+ - Aaron
+ 
 
+#### Group 3 - (Steve)
 
-## Group Leaders
+- Amanda
+- Ross
+- Cynthia
 
-### Jason 
-- Group 1
-- Group 2
+#### Group 4 - (Rachel)
+ - Kozak
+ - Arleen
+ - Arianna
+ - Sam
 
-### Celeste
-- Group 3 
-- Group 4
-
-### Lauren
-- Group 5
+---
