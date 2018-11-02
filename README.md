@@ -142,7 +142,6 @@ You must:
 ---
 
 ## Asking for Help
-In a push for developer independence and self-reliance, we are going to adhere to [these rules](./asking-for-help.md) for receiving help during project week.
 
 **You are going to encounter a ton of unexpected errors and problems.**
 
@@ -171,38 +170,6 @@ In the body of the ticket include:
 1. Link to your deployed app
 2. Link to the project GitHub repo 
 3. Wins, struggles, comments, etc....
-
----
-
-## Project Groups
-
-###### Who are my group members and assigned instructor?
-
-#### Group 1 -  (Joe)
-
- - Matt
- - Dillon
- - Josie
- - Sarah
-
-#### Group 2 - (Steve)
-
- - Sami
- - Jonathan
- - Aaron
- 
-
-#### Group 3 - (Steve)
-
-- Amanda
-- Ross
-- Cynthia
-
-#### Group 4 - (Rachel)
- - Kozak
- - Arleen
- - Arianna
- - Sam
 
 ---
 
