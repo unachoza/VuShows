@@ -6,11 +6,11 @@
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------|---|
 | Used Git       | Project contains development history using frequent and descriptive commit messages.     | 2         |   |
 | Used Git       | Project used branches and merged results. | 2         |   |
-| Readme         | Clear and well-written README that describes approach taken, technologies used, code snippet, installation instructions, user stories, wireframes, and ERDs.     | 8         |   |
-| Provided complete wireframes         | Wireframes are clean and organized and reflect the architecture of the application.     | 8         |   |
-| Provided clear user stories         | User stories are well-constructed and thoughtful, and reflect the behavior of the application.     | 8         |   |
-| Submitted project via GitHub Enterprise         | Submitted project **on time** via GitHub Enterprise.     | 2         |   |
-| Github Project         | Used kanban board as project management tool throughout project to establish sprints, assign tasks and stay on schedule.     | 8         |   |
+| Readme         | Clear and well-written README that describes approach taken, technologies used, code snippet, installation instructions, user stories, wireframes, and ERDs.     | 2         |   |
+| Provided complete wireframes         | Wireframes are clean and organized and reflect the architecture of the application.     | 4         |   |
+| Provided clear user stories         | User stories are well-constructed and thoughtful, and reflect the behavior of the application.     | 2         |   |
+| Submitted project via GitHub Enterprise         | Submitted project **on time** via GitHub Enterprise.     | 4         |   |
+| Github Project         | Used kanban board as project management tool throughout project to establish sprints, assign tasks and stay on schedule.     | 4         |   |
 
 ## Technical Requirements (60 points)
 
