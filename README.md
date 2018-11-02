@@ -101,7 +101,7 @@ You must:
 
 ## Process
 
-**Do not** immediately jump into coding.  For this sprint we want to carefully plan our approach. You **must** use the provided GitHub Project [template](https://git.generalassemb.ly/layne/project-2/projects).
+**Do not** immediately jump into coding.  For this sprint we want to carefully plan our approach. You **must** use the provided project-worksheet.md template.
 
 - Database: Draw out the tables and columns you plan to use in your database (ERDs - Entity Relationship Diagram)
 - Wireframes: Detail the flow of your app through simple wireframes
