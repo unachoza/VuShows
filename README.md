@@ -35,7 +35,7 @@ Make it work, and make it awesome.
 
 You must:
 
-- **Use sequelize & Express** to build an API and a **React** front-end that consumes it
+- **Use Postgres & Express** to build an API and a **React** front-end that consumes it
 - **Create an Express API using, at minimum, two related models**
 - Include **CRUD functionality** in a **RESTful API** for at least one of those models
 - **Consume your own API** by making your front-end with React
@@ -47,7 +47,7 @@ You must:
 
 ### You must also include one of the following additional requirements
 
-- **Auth**: A login/logout system
+- **Auth**: A login/logout system (doesn't have to be true auth but must simulate it)
 - **Third-Party API**: Use a third-party API, either from the frontend or the backend (if it has a key, it should be from the backend)
 - **New NPM package**: Use an NPM package we haven't gone over in class
 
