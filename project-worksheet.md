@@ -66,7 +66,6 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | --- |  
-
 | App | This will render all the subcomponents | 
 | Home | This will render the parent layout | 
 | TvShowList | This will render a list of tvshows | 
