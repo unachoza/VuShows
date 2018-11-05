@@ -8,8 +8,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Incomplete
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| Pseudocode / actual code | Incomplete
 |Day 5| Initial Clickable Model  | Incomplete
@@ -19,15 +19,20 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+We're going to be using data visualization to create a database of TV shows. Information included will be season ratings, character appearances, air dates, directors and writers.
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+https://res.cloudinary.com/duuqzvlvn/image/upload/v1541446821/unit03-project/Wireframes.jpg
+
+https://res.cloudinary.com/duuqzvlvn/image/upload/v1541446821/unit03-project/Components.jpg
+
 
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+
+https://trello.com/b/M0ZLGfpJ/movie-app
 
 ### MVP/PostMVP - 5min
 
@@ -35,14 +40,22 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Database building
+- API call
+- React front end with 6+ components, including Header and search bar
+- User created favorites
+- CRUD functionality
+- Algorithmnic sorting & concatenation
+- Using Trello to manage tasks
+- Layout and style your front-end with CSS
+- Fake User Login
+- Deployment
 
 #### PostMVP 
 
-- Add user auth
+- Incorporate specifically tailored D3 visualizations
+- Animation/ gif
+- Quote Generator
 
 ## React Architectural Design
 
@@ -54,8 +67,14 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Description | 
 | --- | :---: |  
+
+| App | This will render all the subcomponents | 
+| Home | This will render the parent layout | 
+| TvShowList | This will render a list of tvshows | 
+| TvShow | This will render individual tv shows | 
+| TV Episode | This will render individual tv episodes | 
 | Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Footer | This will render the footer include the nav | 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
