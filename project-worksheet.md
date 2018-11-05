@@ -65,7 +65,7 @@ Define the the React components and the architectural design of your app.
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
-| --- | :---: |  
+| --- | --- |  
 
 | App | This will render all the subcomponents | 
 | Home | This will render the parent layout | 
