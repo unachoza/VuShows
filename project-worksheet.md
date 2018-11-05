@@ -30,9 +30,7 @@ https://res.cloudinary.com/duuqzvlvn/image/upload/v1541446821/unit03-project/Com
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
-
-https://trello.com/b/M0ZLGfpJ/movie-app
+https://res.cloudinary.com/duuqzvlvn/image/upload/v1541448252/unit03-project/Priority%20Matrix.jpg
 
 ### MVP/PostMVP - 5min
 
@@ -46,7 +44,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - User created favorites
 - CRUD functionality
 - Algorithmnic sorting & concatenation
-- Using Trello to manage tasks
+- Using Trello to manage tasks and collaboration
 - Layout and style your front-end with CSS
 - Fake User Login
 - Deployment
@@ -56,6 +54,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Incorporate specifically tailored D3 visualizations
 - Animation/ gif
 - Quote Generator
+- Series progress tracker
 
 ## React Architectural Design
 
@@ -75,15 +74,6 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | TV Episode | This will render individual tv episodes | 
 | Header | This will render the header include the nav | 
 | Footer | This will render the footer include the nav | 
-
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
-
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
