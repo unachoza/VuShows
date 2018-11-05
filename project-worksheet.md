@@ -90,7 +90,7 @@ Use this section to include a brief code snippet of functionality that you are p
 
 ```
 function reverse(string) {
-	// here is the code to reverse a string of text
+    // here is the code to reverse a string of text
 }
 ```
 
