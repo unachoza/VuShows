@@ -1,0 +1,24 @@
+{
+  "name": "tvshow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "debugger": "DEBUG=*:* nodemon app.js",
+    "server": "node app.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install && cd client && npm install --only-dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "pg-promise": "^6.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5",
+    "concurrently": "^4.0.1"
+  }
+}
