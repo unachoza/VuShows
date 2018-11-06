@@ -9,7 +9,7 @@ const Home = () => {
 
 <form onSubmit={(e) => this.handleFormSubmit(e)}>
   <label>
-    Login
+    Login!
     <input
       type="text"
       placeholder="User Name"
