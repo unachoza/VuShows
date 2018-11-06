@@ -1,14 +1,17 @@
 \c tvshow_dev;
 
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Friends','Banana Ice Cream with Caramel & Graham Cracker Swirls & Fudge Peace Signs',NULL,'http://www.benjerry.com/files/live/sites/systemsite/files/flavors/bob-marleys-one-love/img/one-love-detail-special-page.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Chocolate Cherry Garcia®','Chocolate Ice Cream with Cherries & Fudge Flakes',NULL,'http://www.benjerry.com/files/live/sites/systemsite/files/flavors/chococlate-cherry-garcia/img/chocolate-cherry-garcia-pint.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Keep Caramel & Cookie On™','Caramel Malt Ice Cream with Shortbread Cookies, Fudge Flakes & Caramel Swirls',NULL,'http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/keep-caramel-and-cookie-on-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Oat of This Swirled™','Buttery Brown Sugar Ice Cream with Fudge Flakes & Oatmeal Cinnamon Cookie Swirls','4.5','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/oat-of-this-world-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Salted Caramel Almond','Vanilla Bean Ice Cream with Roasted Almond Slivers, Fudge Flakes & a Salted Caramel Swirl','5','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/salted-caramel-almond-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Truffle Kerfuffle™','Vanilla Ice Cream with Roasted Pecans, Fudge Flakes & a Salted Chocolate Ganache Swirl','4.4','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/truffle-kerfuffle-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Urban Bourbon™','Burnt Caramel Ice Cream with Almonds, Fudge Flakes & Bourbon Caramel Swirls','4','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/urban-bourbon-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Americone Dream®','Vanilla Ice Cream with Fudge Covered Waffle Cone Pieces & a Caramel Swirl','4.8','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/americone-dream-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Banana Split','Banana & Strawberry Ice Creams with Walnuts, Fudge Chunks & a Fudge Swirl','5','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/banana-split-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Blondie Ambition™','Buttery Brown Sugar Ice Cream with Blonde Brownies and butterscotch toffee flakes','4.5','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/blondie-ambition-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Boom Chocolatta™ Cookie Core','Mocha & Caramel Ice Creams with Chocolate Cookies, Fudge Flakes & a Chocolate Cookie Core','4.6','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/boom-chocolatta-detail.png','Ben & Jerrys');
-INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Bourbon Pecan Pie','Buttery bourbon ice cream with pecans, shortbread cookie pieces and a whiskey caramel swirl.','4','http://www.benjerry.com/files/live/sites/systemsite/files/flavors/products/us/pint/bourbonpeacanpie-pint-detail.png','Ben & Jerrys');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Friends','Comedy','NBC','https://image.tmdb.org/t/p/w500/efiX8iir6GEBWCD0uCFIi5NAyYA.jpg','46.572');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Game of Thrones','Sci-Fi & Fantasy, Drama, Action & Adventure','HBO','https://image.tmdb.org/t/p/w500/gX8SYlnL9ZznfZwEH4KJUePBFUM.jpg','53.742');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Seinfeld','','','https://image.tmdb.org/t/p/w500/8JH8s4WKKSxGxtJvWbQAdaEjv9q.jpg','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Cheers','','','https://image.tmdb.org/t/p/w500','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Everybody Loves Raymond','','','https://image.tmdb.org/t/p/w500','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('The Simpsons','','','https://image.tmdb.org/t/p/w500','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('The Sopranos','','','https://image.tmdb.org/t/p/w500','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Breaking Bad','','','https://image.tmdb.org/t/p/w500','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('The Wire','','','https://image.tmdb.org/t/p/w500','');
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('Mad Men','','','https://image.tmdb.org/t/p/w500','');
+
+
+
+INSERT INTO tvshow(flavor,description,rating,url,brand) VALUES ('','','','','');
+
