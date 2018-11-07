@@ -348,3 +348,50 @@ form input[type=email]:focus, form input[type=password]:focus {
   outline: 0;
   background-color: #000;
 }
+
+/*TVshowList CSS*/
+
+main-container {
+  border: 1px solid pink;
+/*   height: 600px; */
+  width: 900px;
+}
+.mainheading {
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.tvshowlist-container {
+  justify-content: space-between;
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.poster {
+  border: 1px solid black;
+  height: 200px;
+  width: 150px;
+  background: url(http://www.gstatic.com/tv/thumb/tvbanners/183931/p183931_b_v8_ac.jpg);
+  background-size: cover;
+  
+}
+
+.showinfo {
+  border: 1px solid purple;
+  text-align: center;
+  padding: 0 10px;
+}
+
+h3 {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+h4 {
+  text-transform: lowercase;
+  line-height: 0
+}
+
