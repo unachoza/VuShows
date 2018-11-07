@@ -353,12 +353,14 @@ form input[type=email]:focus, form input[type=password]:focus {
 
 main-container {
   border: 1px solid pink;
-/*   height: 600px; */
+  height: 600px;
   width: 900px;
 }
 .mainheading {
   border: 1px solid blue;
-  text-align: center;
+  height: 600px;
+  width: 900px;
+  margin: auto;
 }
 
 .tvshowlist-container {
@@ -375,11 +377,10 @@ main-container {
   width: 150px;
   background: url(http://www.gstatic.com/tv/thumb/tvbanners/183931/p183931_b_v8_ac.jpg);
   background-size: cover;
-
 }
 
 .showinfo {
-  border: 1px solid purple;
+  border: 1px solid purple;*/
   text-align: center;
   padding: 0 10px;
 }

@@ -78,19 +78,23 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Time Frames
 
+
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Wire Framing and App Design | H | 4hrs| 4hrs | 4hrs |
-| Creating Database | H | 6hrs| X | X |
-| Rendering Components | H | 8hrs| X | X |
+| Creating Database | H | 6hrs| 3.5hrs | X |
+| Rendering Components | H | 8hrs| 3hr | X |
 | Collecting and Parsing API data | H | 5hrs| X | X |
-| CRUD Functionality | H | 5hrs| X | X |
+| CRUD Functionality | H | 5hrs| 1h | X |
 | Header with Search Bar | H | 8hrs| X | X |
 | Front End Design | H | 10hrs| X | X |
 | Algrhythmic Sorting and Concatination  | H | 10hrs| X | X |
-| Artistry and CSS  | M | 12hrs| X | X |
+| Artistry and CSS  | M | 12hrs| 2h | X |
 | Local Storage and User Faves | M | 7hrs| X | X |
 | CSS Animations | L | 6hrs| X | X |
+| User Authentication & Hashing | M | X | 2.5hrs | X |
+| Group Think / Merging | L | X| 4hrs | X |
+| Experimenting | L | X| 1hr | X |
 | Total | N/A | 81 | 2 | 2 |
 
 ## Helper Functions
