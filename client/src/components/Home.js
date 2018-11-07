@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="home">
-      <h1>Tv Abstraction </h1>
+      <h1>Tv Abstractions </h1>
     <p>The tv data you want to know!</p>
     <div className="add">
 

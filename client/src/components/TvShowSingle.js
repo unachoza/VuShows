@@ -43,12 +43,12 @@ class TvShowSingle extends Component {
       return (
         <div className="inner">
           <div className="img">
-            <img src={this.state.tvShow.url} alt={this.state.tvShow.flavor} />
+            <img src={this.state.tvShow.url} alt={this.state.tvShow.name} />
           </div>
           <div className="info">
-            <h4 className="brand">{this.state.tvShow.brand}</h4>
-            <h1>{this.state.tvShow.flavor}</h1>
-            <p>{this.state.tvShow.description}</p>
+            <h4 className="rating">{this.state.tvShow.rating}</h4>
+            <h1>{this.state.tvShow.name}</h1>
+            <p>{this.state.tvShow.genre}</p>
             <div className="links">
               <span className="rating">Rating: {this.state.tvShow.rating || 'N/A'}</span>
               <Link to={`/edit/${this.props.match.params.id}`}>Edit</Link>

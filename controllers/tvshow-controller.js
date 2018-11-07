@@ -4,10 +4,10 @@ const tvshowController = {};
 
 tvshowController.index = (req, res) => {
   Tvshow.findAll()
-    .then(icecreams => {
+    .then(Tvshows => {
       res.json({
         message: 'ok',
-        data: icecreams,
+        data: Tvshows,
       });
     })
     .catch(err => {
@@ -18,10 +18,10 @@ tvshowController.index = (req, res) => {
 
 tvshowController.show = (req, res) => {
   Tvshow.findById(req.params.id)
-    .then(icecream => {
+    .then(Tvshow => {
       res.json({
         message: 'ok',
-        data: icecream,
+        data: Tvshow,
       });
     })
     .catch(err => {
@@ -32,15 +32,15 @@ tvshowController.show = (req, res) => {
 
 tvshowController.create = (req, res) => {
   Tvshow.create({
-    flavor: req.body.flavor,
-    description: req.body.description,
-    rating: req.body.rating,
+    name: req.body.name,
+    genre: req.body.genre,
+    net: req.body.net,
     url: req.body.url,
   })
-    .then(icecream => {
+    .then(Tvshow => {
       res.json({
         message: 'ok',
-        data: icecream,
+        data: Tvshow,
       });
     })
     .catch(err => {
@@ -52,17 +52,17 @@ tvshowController.create = (req, res) => {
 tvshowController.update = (req, res) => {
   Tvshow.update(
     {
-      flavor: req.body.flavor,
-      description: req.body.description,
-      rating: req.body.rating,
+      name: req.body.name,
+      genre: req.body.genre,
+      net: req.body.net,
       url: req.body.url,
     },
     req.params.id,
   )
-    .then(icecream => {
+    .then(Tvshow => {
       res.json({
         message: 'ok',
-        data: icecream,
+        data: Tvshow,
       });
     })
     .catch(err => {
@@ -73,10 +73,10 @@ tvshowController.update = (req, res) => {
 
 tvshowController.destroy = (req, res) => {
   Tvshow.destroy(req.params.id)
-    .then(icecream => {
+    .then(Tvshow => {
       res.json({
         message: 'ok',
-        data: icecream,
+        data: Tvshow,
       });
     })
     .catch(err => {

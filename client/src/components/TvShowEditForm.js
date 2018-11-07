@@ -8,10 +8,10 @@ class TvShowEditForm extends Component {
   constructor() {
     super();
     this.state = {
-      flavor: '',
-      desc: '',
+      name: '',
+      genre: '',
+      network: '',
       rating: '',
-      brand: '',
       url: '',
       fireRedirect: false,
     };
@@ -25,10 +25,10 @@ class TvShowEditForm extends Component {
         console.log(res);
         const tvShow = res.data.data;
         this.setState({
-          flavor: tvShow.flavor,
-          desc: tvShow.description,
+          name: tvShow.name,
+          genre: tvShow.genre,
+          network: tvShow.network,
           rating: tvShow.rating,
-          brand: tvShow.brand,
           url: tvShow.url,
         })
       }).catch(err => console.log(err));
@@ -46,10 +46,10 @@ class TvShowEditForm extends Component {
     e.preventDefault();
     axios
       .put(`/tvshow/${this.props.match.params.id}`, {
-        flavor: this.state.flavor,
-        description: this.state.desc,
+        name: this.state.name,
+        genre: this.state.genre,
+        network: this.state.network,
         rating: this.state.rating,
-        brand: this.state.brand,
         url: this.state.url,
       })
       .then(res => {
@@ -68,42 +68,41 @@ class TvShowEditForm extends Component {
       <div className="edit">
         <form onSubmit={this.handleFormSubmit}>
           <label>
-            Flavor
+            name
             <input
               type="text"
-              placeholder="Flavor"
-              name="flavor"
-              value={this.state.flavor}
+              placeholder="name"
+              name="name"
+              value={this.state.name}
               onChange={this.handleInputChange}
             />
           </label>
           <label>
-            Description
-            <input
+            genre   
+          <input
               type="text"
-              placeholder="Description"
-              name="desc"
-              value={this.state.desc}
+              placeholdenre      name="genre"
+              value={this.state.genre}
               onChange={this.handleInputChange}
             />
           </label>
           <label>
-            Rating
+            network
             <input
               type="number"
-              placeholder="Rating"
-              name="rating"
-              value={this.state.description}
+              placeholder="network"
+              name="network"
+              value={this.state.network}     
               onChange={this.handleInputChange}
             />
           </label>
           <label>
-            Brand
+            rating
             <input
               type="text"
-              placeholder="Brand"
-              name="brand"
-              value={this.state.brand}
+              placeholder="rating"
+              name="rating"
+              value={this.state.rating}
               onChange={this.handleInputChange}
             />
           </label>
