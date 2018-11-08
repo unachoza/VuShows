@@ -15,14 +15,19 @@ class Search extends Component {
         } 
         this.handleSubmit = this.handleSubmit.bind(this)
     }
-    getInfo= () => {
+
+    getInfo() {
         //axios.get(`${API_URL}?api_key=${API_KEY}&prefix=${this.state.query}&limit=7`)
+        console.log('hello')
         axios.get(`${API_URL}?api_key=43caac628b4f73785a588143ec291dbe&language=en-US&query=${this.state.query}&page=1`)
-        .then(({data}) => {
+        .then((data) => {
+            console.log(data)
             this.setState({
-                results: data.data || []
+                results: data.data.results
             })
+            console.log(this.state.results)
         })
+        .then(() => console.log(this.state.results))
     }
 
     handleInput = async(e) => {
@@ -47,12 +52,13 @@ class Search extends Component {
             >
                 Search
                 <input
-                placeholder= "Tv Show"
+                placeholder= "Search Tv Show"
                 ref={input => this.search = input}
                 onChange={this.handleInput}
                 ></input>
-                <button
-                >Submit</button>
+               <input type = 'submit'
+                value = 'submit'
+               />
                 <Suggestions results={this.state.results} />
             </form>
         )
