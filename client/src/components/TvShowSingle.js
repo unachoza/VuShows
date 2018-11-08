@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import { Link, Redirect } from 'react-router-dom';
 
+import TvSeasonList from './TvSeasonList';
+
 class TvShowSingle extends Component {
   constructor() {
     super();
@@ -41,14 +43,16 @@ class TvShowSingle extends Component {
   renderTvShowOrLoading() {
     if (this.state.apiDataLoaded) {
       return (
+        <div>
         <div className="inner">
           <div className="img">
             <img src={this.state.tvShow.url} alt={this.state.tvShow.name} />
           </div>
           <div className="info">
-            <h4 className="rating">{this.state.tvShow.rating}</h4>
             <h1>{this.state.tvShow.name}</h1>
             <p>{this.state.tvShow.genre}</p>
+            <p>{this.state.tvShow.network}</p>
+            <p>{this.state.tvShow.showid}</p>
             <div className="links">
               <span className="rating">Rating: {this.state.tvShow.rating || 'N/A'}</span>
               <Link to={`/edit/${this.props.match.params.id}`}>Edit</Link>
@@ -58,6 +62,10 @@ class TvShowSingle extends Component {
                 : ''}
             </div>
           </div>
+        </div>
+            <div>
+              <TvSeasonList tvshow={this.state.tvShow}/>
+            </div>
         </div>
       )
     } else return <p className="loading">Loading...</p>

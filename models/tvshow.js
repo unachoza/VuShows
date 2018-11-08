@@ -20,11 +20,11 @@ Tvshow.create = tvshow => {
   return db.one(
     `
     INSERT INTO tvshow
-    (name, genre, network, url, rating)
-    VALUES ($1, $2, $3, $4, $5)
+    (name, genre, network, url, rating, showid)
+    VALUES ($1, $2, $3, $4, $5, $6)
     RETURNING *
   `,
-    [tvshow.name, tvshow.genre, tvshow.network, tvshow.url, tvshow.rating]
+    [tvshow.name, tvshow.genre, tvshow.network, tvshow.url, tvshow.rating, tvshow.showid]
   );
 };
 
@@ -36,11 +36,12 @@ Tvshow.update = (tvshow, id) => {
       genre = $2,
       network = $3,
       url = $4,
-      rating = $5
-    WHERE id = $6
+      rating = $5,
+      showid = $6
+    WHERE id = $7
     RETURNING *
   `,
-    [tvshow.name, tvshow.genre, tvshow.network, tvshow.url, tvshow.rating, id]
+    [tvshow.name, tvshow.genre, tvshow.network, tvshow.url, tvshow.rating, tvshow.showid, id]
   );
 };
 

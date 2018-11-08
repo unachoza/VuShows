@@ -10,5 +10,6 @@ CREATE TABLE IF NOT EXISTS tvshow (
   genre VARCHAR(255),
   network VARCHAR(6),
   url VARCHAR(255),
-  rating VARCHAR(255)
+  rating VARCHAR(255),
+  showid VARCHAR(255)
 );

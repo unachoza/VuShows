@@ -388,10 +388,10 @@ main-container {
 h3 {
   font-variant: small-caps;
   letter-spacing: 2px;
-  line-height: 1;
+  line-height: 2;
 }
 
 h4 {
-  text-transform: lowercase;
-  line-height: 0
+  /*text-transform: lowercase;*/
+  line-height: 2
 }

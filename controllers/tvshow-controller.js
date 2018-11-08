@@ -4,10 +4,10 @@ const tvshowController = {};
 
 tvshowController.index = (req, res) => {
   Tvshow.findAll()
-    .then(Tvshows => {
+    .then(Tvshow => {
       res.json({
         message: 'ok',
-        data: Tvshows,
+        data: Tvshow,
       });
     })
     .catch(err => {
