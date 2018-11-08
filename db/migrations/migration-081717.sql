@@ -1,4 +1,4 @@
-drop database tvshow_dev; 
+drop database tvshow_dev;
 create database tvshow_dev;
 
 
