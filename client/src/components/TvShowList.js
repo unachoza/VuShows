@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import axios from 'axios';
 import TvShow from './TvShow';
 
@@ -35,8 +34,10 @@ class TvShowList extends Component {
 
   render() {
     return (
-      <div className="tvshow-list">
-        {this.renderTvShows()}
+      <div>
+        <div className="tvshow-list">
+          {this.renderTvShows()}
+        </div>
       </div>
     )
   }
