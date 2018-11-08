@@ -7,7 +7,9 @@ const TvShow = (props) => {
     <div className="tv-inlist">
       <img alt='' src={props.tvshow.url} />
       <h2>{props.tvshow.name}</h2>
-      <p>Rating: {props.tvshow.rating || 'N/A'}</p>
+      <h2>{props.tvshow.network}</h2>
+      <h2>{props.tvshow.genre}</h2>
+      <p>Popularity: {props.tvshow.rating || 'N/A'}</p>
       <Link to={`/tv-show/${props.tvshow.id}`}>See More</Link>
     </div>
   )

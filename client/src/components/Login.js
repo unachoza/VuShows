@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Home = () => {
+const Login = () => {
   return (
-    <div className="home">
+    <div className="login">
       <h1>Tv Abstractions </h1>
     <p>The tv data you want to know!</p>
     <div className="add">
@@ -19,7 +19,7 @@ const Home = () => {
     />
   </label>
   <label>
-    
+
     <input
       type="text"
       placeholder="Password"
@@ -38,4 +38,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Login;
