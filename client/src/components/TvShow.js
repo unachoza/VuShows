@@ -1,8 +1,8 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 const TvShow = (props) => {
+	//console.log(props.tvshow)
   return (
     <div className="tv-inlist">
       <img alt='' src={props.tvshow.url} />

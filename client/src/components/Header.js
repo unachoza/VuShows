@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from './Search'
 import { Link } from 'react-router-dom';
 import Search from './Search';
 
@@ -8,6 +9,8 @@ function Header() {
       <div className="logo">TV Show Database</div>
       <nav>
         <ul>
+      <Search/>
+           <li></li>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/tv-show'>Tv Shows</Link></li>
           <li>
