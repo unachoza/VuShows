@@ -1,0 +1,37 @@
+DROP DATABASE crypt_db;
+CREATE DATABASE crypt_db;
+\c crypt_db;
+
+-- DROP TABLE IF EXISTS admin;
+-- DROP TABLE IF EXISTS tokens;
+-- DROP TABLE IF EXISTS users;
+-- DROP TABLE IF EXISTS testdata;
+
+CREATE TABLE users (
+  id BIGSERIAL PRIMARY KEY,
+  username VARCHAR NOT NULL,
+  hash VARCHAR NOT NULL
+);
+
+CREATE TABLE tokens (
+  id BIGSERIAL PRIMARY KEY NOT NULL,
+  hash VARCHAR NOT NULL,
+  tstamp BIGINT NOT NULL,
+  ip VARCHAR NOT NULL,
+  user_id INTEGER REFERENCES users(id)
+);
+
+CREATE TABLE admin (
+  id INT PRIMARY KEY NOT NULL,
+  hash VARCHAR NOT NULL
+);
+
+CREATE TABLE tvshow (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  genre VARCHAR(255),
+  network VARCHAR(6),
+  url VARCHAR(255),
+  rating VARCHAR(255),
+  showid VARCHAR(255)
+);
