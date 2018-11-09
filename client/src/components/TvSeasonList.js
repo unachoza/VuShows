@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TvSeason from './TvSeason';
 
 class TvSeasonList extends Component {
     constructor(props) {
@@ -22,6 +23,17 @@ class TvSeasonList extends Component {
       .then(bigdata => this.setState({ bigdata }));
   }
 
+  renderTvSeasons() {
+    let seasonsArray = this.state.bigdata.seasons
+    if (true){
+      return this.seasonsArray.map(tvshow => {
+        return (
+          <TvSeason key={tvshow.id} tvshow={tvshow} />
+        );
+      });
+    } else return <p>Loading...</p>
+  }
+
   render() {
     console.log(this.state.data.name)
     return (
@@ -29,6 +41,7 @@ class TvSeasonList extends Component {
       Season List going here
       <br /> Number of seasons: &nbsp;
       {this.state.bigdata.number_of_seasons}
+      {this.renderTvSeasons()}
     </footer>
     )
   }

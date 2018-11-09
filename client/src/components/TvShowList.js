@@ -19,6 +19,7 @@ class TvShowList extends Component {
           apiDataLoaded: true,
           apiData: res.data.data,
         })
+        console.log(this.state.apiData)
       })
   }
 
