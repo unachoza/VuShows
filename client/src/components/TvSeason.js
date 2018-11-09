@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 const TvSeason = (props) => {
   return (
     <div className="tv-inlist">
-      Hello there
+      <img alt='' src={props.tvshow.poster_path} />
+      <h2>{props.tvshow.name}</h2>
+      <h4>{props.tvshow.air_date}</h4>
+      <h4>{props.tvshow.episode_count}</h4>
     </div>
   )
 }
