@@ -108,6 +108,7 @@ button::-moz-focus-inner {
 .container .home {
   height: 800px;
   width: 400px;
+.container .login {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -115,19 +116,12 @@ button::-moz-focus-inner {
   justify-content: center;
 }
 
-.container .home h1 {
-  font-size: 2em;
-  line-height: 1.4em;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.container .home h3 {
+.container .login h3 {
   font-size: 3em;
   font-family: inconsolata, monospace;
 }
 
-.container .home h3:after {
+.container .login h3:after {
   content: '🍦🍦🍦';
   display: block;
   text-align: center;
@@ -391,10 +385,10 @@ main-container {
 h3 {
   font-variant: small-caps;
   letter-spacing: 2px;
-  line-height: 1;
+  line-height: 2;
 }
 
 h4 {
-  text-transform: lowercase;
-  line-height: 0
+  /*text-transform: lowercase;*/
+  line-height: 2
 }

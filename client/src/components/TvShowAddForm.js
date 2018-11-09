@@ -13,6 +13,7 @@ class TvShowAddForm extends Component {
       network: '',
       rating: '',
       url: '',
+      showid: '',
       fireRedirect: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -99,6 +100,16 @@ class TvShowAddForm extends Component {
               placeholder="URL"
               name="url"
               value={this.state.url}
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label>
+            Show ID
+            <input
+              type="text"
+              placeholder="Show ID"
+              name="showid"
+              value={this.state.showid}
               onChange={this.handleInputChange}
             />
           </label>

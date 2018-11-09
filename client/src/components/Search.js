@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react'
 import Suggestions from './Suggestions'
 import axios from 'axios'
@@ -66,3 +67,4 @@ class Search extends Component {
 }
 
 export default Search 
+
