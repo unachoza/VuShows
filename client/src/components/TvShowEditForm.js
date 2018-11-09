@@ -13,6 +13,7 @@ class TvShowEditForm extends Component {
       network: '',
       rating: '',
       url: '',
+      showid: '',
       fireRedirect: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -30,6 +31,7 @@ class TvShowEditForm extends Component {
           network: tvShow.network,
           rating: tvShow.rating,
           url: tvShow.url,
+          showid: tvShow.showid
         })
       }).catch(err => console.log(err));
   }
@@ -51,6 +53,7 @@ class TvShowEditForm extends Component {
         network: this.state.network,
         rating: this.state.rating,
         url: this.state.url,
+        showid: this.state.showid
       })
       .then(res => {
         console.log(res);
@@ -78,10 +81,11 @@ class TvShowEditForm extends Component {
             />
           </label>
           <label>
-            genre   
+            genre
           <input
               type="text"
-              placeholdenre      name="genre"
+              placeholder="genre"
+              name="genre"
               value={this.state.genre}
               onChange={this.handleInputChange}
             />
@@ -89,10 +93,10 @@ class TvShowEditForm extends Component {
           <label>
             network
             <input
-              type="number"
+              type="text"
               placeholder="network"
               name="network"
-              value={this.state.network}     
+              value={this.state.network}
               onChange={this.handleInputChange}
             />
           </label>
@@ -113,6 +117,16 @@ class TvShowEditForm extends Component {
               placeholder="URL"
               name="url"
               value={this.state.url}
+              onChange={this.handleInputChange}
+            />
+          </label>
+          <label>
+            Show ID
+            <input
+              type="text"
+              placeholder="Show ID"
+              name="showid"
+              value={this.state.showid}
               onChange={this.handleInputChange}
             />
           </label>

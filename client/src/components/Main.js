@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import '../App.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Login from './components/Login';
-import TvShowList from './components/TvShowList.js';
-import TvShowSingle from './components/TvShowSingle.js';
-import TvShowAddForm from './components/TvShowAddForm.js';
-import TvShowEditForm from './components/TvShowEditForm.js';
+import Header from './Header';
+import Footer from './Footer';
+import Login from './Login';
+import TvShowList from './TvShowList.js';
+import TvShowSingle from './TvShowSingle.js';
+import TvShowAddForm from './TvShowAddForm.js';
+import TvShowEditForm from './TvShowEditForm.js';
 
 
 class Main extends Component {
