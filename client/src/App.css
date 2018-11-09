@@ -112,6 +112,7 @@ button::-moz-focus-inner {
 .container .home {
   height: 800px;
   width: 400px;
+}
 .container .login {
   display: flex;
   flex-direction: column;
