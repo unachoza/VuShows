@@ -4,14 +4,18 @@ import '../App.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './Header';
 import Footer from './Footer';
-import Login from './Login';
 import TvShowList from './TvShowList.js';
 import TvShowSingle from './TvShowSingle.js';
 import TvShowAddForm from './TvShowAddForm.js';
 import TvShowEditForm from './TvShowEditForm.js';
 
+// const token = this.props.token
+// axios.get(`/db/${token}/`)
+//const token = this.props.token
+//   axios.get(`/db/${token}/`)
 
 class Main extends Component {
+
 
   getInfo() {
     console.log('hello')
@@ -32,6 +36,7 @@ class Main extends Component {
 
 
   render() {
+    console.log(this.props.token)
     return (
        <Router>
         <div className="App">
@@ -40,15 +45,15 @@ class Main extends Component {
           />
           <div className="container">
           <Switch />
-          <Route exact path='/' component={Login} />
           <Route exact path='/tv-show' component={TvShowList} />
           <Route exact path="/tv-show/:id" component={TvShowSingle} />
           <Route exact path="/add" component={TvShowAddForm} />
           <Route exact path="/edit/:id" component={TvShowEditForm} />
           </div>
+      
           <Footer />
         </div>
-      </Router>
+     </Router>
     );
   }
 }
