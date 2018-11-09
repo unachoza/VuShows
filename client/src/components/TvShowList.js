@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TvShow from './TvShow';
 //import Suggestions from './Suggestions'
-
+// token 15051078061731916106618784648101
 class TvShowList extends Component {
   constructor() {
     super();
@@ -13,9 +13,12 @@ class TvShowList extends Component {
     }
 
   }
+  ///token needs to be passed as props, it lives in app (and local storage)
 
+  //axios.post(`/db/${this.state.token}`, show)
   componentDidMount() {
-    axios.get('/tvshow')
+
+    axios.get('/db/15051078061731916106618784648101')
       .then(res => {
         this.setState({
           apiDataLoaded: true,
