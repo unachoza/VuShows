@@ -34,8 +34,10 @@ class TvShowList extends Component {
 
   render() {
     return (
-      <div className="tvshow-list">
-        {this.renderTvShows()}
+      <div>
+        <div className="tvshow-list">
+          {this.renderTvShows()}
+        </div>
       </div>
     )
   }

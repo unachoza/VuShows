@@ -105,19 +105,15 @@ button::-moz-focus-inner {
   flex: 1;
 }
 
+.container .home {
+  height: 800px;
+  width: 400px;
 .container .login {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
-}
-
-.container .login h1 {
-  font-size: 7em;
-  line-height: 1.4em;
-  font-weight: 900;
-  text-transform: uppercase;
 }
 
 .container .login h3 {
@@ -181,7 +177,8 @@ footer {
 }
 
 .tv-inlist {
-  width: 30%;
+  height: 450px;
+  width: 400px;
   margin: 15px;
   box-sizing: border-box;
   padding: 30px;
