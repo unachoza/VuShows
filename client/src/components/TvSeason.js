@@ -1,14 +1,16 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 const TvSeason = (props) => {
+  let base = props.tvshow.poster_path
+  let base1 = "https://image.tmdb.org/t/p/w500"
+  let base2 = base1 + base
+
   return (
     <div className="tv-inlist">
-      <img alt='' src={props.tvshow.poster_path} />
+      <img alt='' src= {base2} />
       <h2>{props.tvshow.name}</h2>
-      <h4>{props.tvshow.air_date}</h4>
-      <h4>{props.tvshow.episode_count}</h4>
+      <h4>Premiered On: &nbsp;{props.tvshow.air_date}</h4>
+      <h4>Number of episodes: &nbsp;{props.tvshow.episode_count}</h4>
     </div>
   )
 }
