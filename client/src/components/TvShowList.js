@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import TvShow from './TvShow';
+//import Suggestions from './Suggestions'
 
 class TvShowList extends Component {
   constructor() {
@@ -8,6 +9,7 @@ class TvShowList extends Component {
     this.state = {
       apiDataLoaded: false,
       apiData: null,
+      show: false,
     }
 
   }
@@ -18,6 +20,7 @@ class TvShowList extends Component {
         this.setState({
           apiDataLoaded: true,
           apiData: res.data.data,
+          show: true,
         })
       })
   }
@@ -35,6 +38,8 @@ class TvShowList extends Component {
   render() {
     return (
       <div>
+        {/* <Suggestions results={this.state.results} /> */}
+
         <div className="tvshow-list">
           {this.renderTvShows()}
         </div>

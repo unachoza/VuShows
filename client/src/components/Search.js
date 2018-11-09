@@ -1,6 +1,5 @@
 
 import React, {Component} from 'react'
-import Suggestions from './Suggestions'
 import axios from 'axios'
 
 //const { 43caac628b4f73785a588143ec291dbe} = process.env
@@ -12,24 +11,13 @@ class Search extends Component {
         super(props)
         this.state = {
             query: '',
-            results: []
+            results: [],
+            show: false,
         } 
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    getInfo() {
-        //axios.get(`${API_URL}?api_key=${API_KEY}&prefix=${this.state.query}&limit=7`)
-        console.log('hello')
-        axios.get(`${API_URL}?api_key=43caac628b4f73785a588143ec291dbe&language=en-US&query=${this.state.query}&page=1`)
-        .then((data) => {
-            console.log(data)
-            this.setState({
-                results: data.data.results
-            })
-            console.log(this.state.results)
-        })
-        .then(() => console.log(this.state.results))
-    }
+   
 
     handleInput = async(e) => {
       await this.setState({
@@ -41,7 +29,7 @@ class Search extends Component {
     handleSubmit(e){
         e.preventDefault()
         console.log(this.state.query)
-        this.getInfo()
+        this.props.getInfo()
         console.log('I was clicked')
 
     }
@@ -60,7 +48,6 @@ class Search extends Component {
                <input type = 'submit'
                 value = 'submit'
                />
-                <Suggestions results={this.state.results} />
             </form>
         )
     }
