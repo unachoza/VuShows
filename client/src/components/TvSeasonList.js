@@ -83,9 +83,7 @@ class TvSeasonList extends Component {
     {this.state.seasondata.number_of_seasons}
     </div>
     <footer>
-      <br />
       {this.renderTvSeasons()}
-      <br />
     </footer>
     <div>
       {this.renderTvEpisodes()}
