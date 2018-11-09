@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import '../App.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './Header';
@@ -14,13 +15,14 @@ class Main extends Component {
 
   getInfo() {
     console.log('hello')
-    axios.get(`${API_URL}?api_key=43caac628b4f73785a588143ec291dbe&language=en-US&query=${this.state.query}&page=1`)
+    let base = "https://api.themoviedb.org/3/search/tv"
+    axios.get(`${base}?api_key=43caac628b4f73785a588143ec291dbe&language=en-US&query=${this.state.query}&page=1`)
     .then((data) => {
         console.log(data)
         this.setState({
             results: data.data.results,
             show: true,
-        
+
         })
         console.log(this.state.results)
     })
@@ -33,7 +35,7 @@ class Main extends Component {
     return (
        <Router>
         <div className="App">
-          <Header 
+          <Header
             getInfo = {this.getInfo}
           />
           <div className="container">

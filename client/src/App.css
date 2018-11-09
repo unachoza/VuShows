@@ -1,7 +1,8 @@
 
 .underline {
   text-decoration: underline;
-  
+}
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Poppins:400,700');
 
 html, body, div, span, applet, object, iframe,
