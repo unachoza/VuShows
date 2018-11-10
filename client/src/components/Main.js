@@ -33,7 +33,7 @@ class Main extends Component {
     .then(() => console.log(this.state.results))
 }
 
-
+// token ={this.props.token}
 
   render() {
     console.log(this.props.token)
@@ -45,8 +45,8 @@ class Main extends Component {
           />
           <div className="container">
           <Switch />
-          <Route exact path='/tv-show' component={TvShowList} />
-          <Route exact path="/tv-show/:id" component={TvShowSingle} />
+          <Route exact path='/tv-show' render={(props) => <TvShowList {...props} token={this.props.token} />} />}
+          <Route exact path="/tv-show/:id" render={(props) => <TvShowSingle {...props} token={this.props.token} />} />}
           <Route exact path="/add" component={TvShowAddForm} />
           <Route exact path="/edit/:id" component={TvShowEditForm} />
           </div>
