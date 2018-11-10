@@ -18,7 +18,8 @@ class TvShowSingle extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/db/${this.props.match.params.id}`)
+    //passed token here
+    axios.get(`/db/${this.props.token}/${this.props.match.params.id}`)
       .then(res => {
         this.setState({
           apiDataLoaded: true,
@@ -28,7 +29,8 @@ class TvShowSingle extends Component {
   }
 
   deleteTvShow() {
-    axios.delete(`/db/${this.props.match.params.id}`)
+    //passed token here
+    axios.delete(`/db/${this.props.token}/${this.props.match.params.id}`)
       .then(res => {
         console.log(res);
         this.setState({
