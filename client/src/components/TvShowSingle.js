@@ -29,6 +29,7 @@ class TvShowSingle extends Component {
   }
 
   deleteTvShow() {
+    //passed token here
     axios.delete(`/db/${this.props.token}/${this.props.match.params.id}`)
       .then(res => {
         console.log(res);
