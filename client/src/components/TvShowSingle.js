@@ -18,6 +18,7 @@ class TvShowSingle extends Component {
   }
 
   componentDidMount() {
+    //passed token here
     axios.get(`/db/${this.props.token}/${this.props.match.params.id}`)
       .then(res => {
         this.setState({

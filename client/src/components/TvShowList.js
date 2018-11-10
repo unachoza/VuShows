@@ -17,7 +17,7 @@ class TvShowList extends Component {
 
   //axios.post(`/db/${this.state.token}`, show)
   componentDidMount() {
-
+//passed token 
     axios.get(`/db/${this.props.token}`)
       .then(res => {
         this.setState({

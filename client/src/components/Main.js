@@ -45,7 +45,9 @@ class Main extends Component {
           />
           <div className="container">
           <Switch />
+          {/* passed token here  */}
           <Route exact path='/tv-show' render={(props) => <TvShowList {...props} token={this.props.token} />} />}
+          {/* passed token here  */}
           <Route exact path="/tv-show/:id" render={(props) => <TvShowSingle {...props} token={this.props.token} />} />}
           <Route exact path="/add" component={TvShowAddForm} />
           <Route exact path="/edit/:id" component={TvShowEditForm} />
