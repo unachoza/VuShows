@@ -51,7 +51,7 @@ class TvSeasonList extends Component {
     let showid = this.props.tvshow.showid
     let seasonnumber = this.state.seasonnumber
     if (this.state.needsLoading) {
-      // console.log(this.state.needsLoading)
+     // console.log(this.state.needsLoading)
         this.setState(prevState => ({
           needsLoading: false
         }))
@@ -62,7 +62,7 @@ class TvSeasonList extends Component {
         );
       // console.log(this.state.needsLoading, 'after render')
     }
-    // console.log(this.state.needsLoading)
+    //console.log(this.state.needsLoading)
     if(this.state.episodedata.episodes) {
       return this.state.episodedata.episodes.map(episodes => {
         return (
