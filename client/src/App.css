@@ -1,406 +1,271 @@
-
-.underline {
-  text-decoration: underline;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Poppins:400,700');
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input[type="submit"],
-input[type=password],
-input[type="reset"],
-input[type="button"],
-button {
-    background: none;
-    border: 0;
-    color: inherit;
-    /* cursor: default; */
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    -webkit-appearance: button; /* for input */
-    cursor: pointer;
-}
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-
-
-
-/* J CSS */
-
-.color-one {
-  color: #F3C9DD;
-}
-
-.color-two {
-  color: #B18AE0;
-}
-
-.color-three {
-  color: #87DCFA;
-}
-
 .App {
-  background: #cf5300;
-/*  background: #87dcfa;
-  background: -moz-linear-gradient(45deg, #87dcfa 0%, #b18ae0 100%);
-  background: -webkit-linear-gradient(45deg, #87dcfa 0%,#b18ae0 100%);
-  background: linear-gradient(45deg, #87dcfa 0%,#b18ae0 100%);*/
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87dcfa', endColorstr='#b18ae0',GradientType=1 );
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: 'poppins', sans-serif;
-  font-size: 18px;
-  line-height: 1.4em;
+  width: 100vw;
+  height: 100vh;
+  background-color: #cf5300;
 }
 
-.container {
+.loading {
+  height: 100vh;
   display: flex;
-  flex: 1;
-}
-
-.container .home {
-  height: 800px;
-  width: 400px;
-}
-.container .login {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
+  flex-flow: column nowrap;
   justify-content: center;
-}
-
-.container .login h3 {
-  font-size: 3em;
-  font-family: inconsolata, monospace;
-}
-
-.container .login h3:after {
-  content: '🍦🍦🍦';
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px;
-}
-
-header nav ul {
-  display: flex;
-}
-
-header nav ul li a {
-  padding: 15px;
-  text-decoration: none;
-  color: black;
-  font-family: 'inconsolata', monospace;
-  text-transform: uppercase;
-  transition: 0.2s;
-}
-
-header nav ul li a:hover {
-  background-color: rgba(243, 201, 221, 0.7);
-  border-bottom: 1px solid black;
-}
-
-header .logo {
-  font-weight: 800;
-  font-style: italic;
-}
-
-footer {
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid black;
-}
-
-.test {
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid black;
-}
-
-.tvshow-list {
-  display: flex;
-  max-width: 80vw;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
-.tvshow-list .tv-inlist img {
-  max-width: 100%;
-}
-
-.tv-inlist {
-  height: 450px;
-  width: 400px;
-  margin: 15px;
-  box-sizing: border-box;
-  padding: 30px;
-  border: 1px solid black;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 0.2s all;
-}
-
-.tv-inlist:hover {
-  background-color:  rgba(243, 201, 221, 0.3);
-}
-
-
-.tv-inlist h2 {
-  line-height: 1.4em;
-  font-weight: 900;
-  margin: 10px auto;
-}
-
-.tv-inlist p {
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-family: 'inconsolata', monospace;
-}
-
-.tv-inlist a {
-  padding: 15px 30px;
-  margin: 10px auto;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  font-family: 'inconsolata', monospace;
-  transition: 0.2s all;
-}
-
-.tv-inlist a:hover {
-  color: #87DCFA;
-}
-
-.tvshow-single {
-  max-width: 80vw;
-  margin: 150px auto;
-  padding: 50px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  display: flex;
-}
-
-
-.inner {
-  display: flex;
   align-items: center;
 }
 
-.img, .info {
-  padding: 15px;
+.loading-spinning {
+  font-size: 10vh;
+  transform-origin: 50% 50%;
+  animation: spin 1s linear infinite;
 }
 
-.img img {
-  transition: 0.2s all;
+@keyframes spin {
+  0% {
+    transform:rotate(0deg);
+  }
+  10% {
+    transform:rotate(13deg);
+  }
+  25% {
+    transform:rotate(20deg);
+  }
+  40% {
+    transform:rotate(13deg);
+  }
+  50% {
+    transform:rotate(0deg);
+  }
+  60% {
+    transform:rotate(-13deg);
+  }
+  75% {
+    transform:rotate(-20deg);
+  }
+  90% {
+    transform:rotate(-13deg);
+  }
+  100% {
+    transform:rotate(0deg);
+  }
 }
 
-.img img:hover {
-  margin-top: -15px;
+.logo {
+  background: url(./_img/tv.svg);
+  background-position: center;
+  background-size: 95% auto;
 }
 
-.info h1 {
-  font-size: 2em;
-  font-weight: 900;
-  line-height: 1.4em;
+.magnifier {
+  background: url(./_img/magnifier.svg);
+  background-position: center right;
+  background-size: 80% auto;
 }
 
-.info h4 {
-  margin-left: 15px;
-  font-family: 'inconsolata', monospace;
-}
-
-.info p {
-  font-size: 1.4em;
-  line-height: 1.4em;
-  font-style: italic;
-}
-
-.info .links {
-  margin: 20px 0;
-}
-
-.info .links .rating {
-  font-family: 'inconsolata', monospace;
-  background-color: black;
-  color: white;
-  padding: 6px 10px;
-  margin: 0 5px;
-}
-
-.info .links a, .info .links .delete {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 900;
-  color: black;
-  padding: 0 20px;
-  border: 3px solid black;
-  box-sizing: border-box;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: 0.2s all;
-}
-
-.info .links a:hover, .info .links .delete:hover {
-  background-color: black;
-  color: #b18ae0;
-}
-
-
-.container .add, .container .edit {
-  margin: 50px auto;
-}
-
-.add form, .edit form {
-  width: 50vw;
-  padding: 50px;
-  box-sizing: border-box;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #000;
-}
-
-form input[type=text], form input[type=number], form input[type=email], form input[type=password] {
-  border: 0;
-  border-bottom: 3px solid #eee;
-  font-size: 1.7em;
-  margin: 20px 0;
-  padding: 5px;
-  display: block;
+.icon {
   width: 100%;
-  transition: 0.3s;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
-form input[type=text]:focus, form input[type=number]:focus,
-form input[type=email]:focus, form input[type=password]:focus {
-  border-bottom: 3px solid #000;
-  outline: 0;
-}
 
-.add form input[type=submit], .edit form input[type=submit],
-.login form input[type=submit], .register form input[type=submit]  {
-  background-color: #000;
-  display: block;
-  margin: auto;
-  padding: 10px 30px;
-  font-size: 1.5em;
-  color: white;
-  font-weight: 900;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.add form input[type=submit]:hover, .add form input[type=submit]:focus,
-.edit form input[type=submit]:hover, .edit form input[type=submit]:focus {
-  outline: 0;
-  background-color: #000;
-}
 
-/*TVshowList CSS*/
-
-main-container {
-  border: 1px solid pink;
-  height: 600px;
-  width: 900px;
-}
-.mainheading {
-  border: 1px solid blue;
-  height: 600px;
-  width: 900px;
-  margin: auto;
-}
-
-.tvshowlist-container {
-  justify-content: space-between;
-  border: 1px solid pink;
+.login {
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.poster {
-  border: 1px solid black;
-  height: 200px;
-  width: 150px;
-  background: url(http://www.gstatic.com/tv/thumb/tvbanners/183931/p183931_b_v8_ac.jpg);
-  background-size: cover;
+.login-header {
+  margin: 5vh;
+  width: 50vmin;
+  height: 43vmin;
+  max-width: 350px;
+  align-self: top;
 }
 
-.showinfo {
-  border: 1px solid purple;*/
-  text-align: center;
-  padding: 0 10px;
+.login-form {
+  width: 80%;
+  max-width: 500px;
+  padding: 2vh 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 80%;
 }
 
-h3 {
-  font-variant: small-caps;
-  letter-spacing: 2px;
-  line-height: 2;
+.login-message {
+  height: 5vh;
+  font-size: 60%;
+  font-style: italic;
 }
 
-div {
-  margin: 10vh 0;
+.login-footer {
+  padding: 0 0 3vh 0;
+  font-size: 35%;
 }
+
+
+
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(255,255,0,.2);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 50%;
+}
+
+.header-side {
+  margin: 0 1vh;
+  padding: 1vh 0;
+  width: 8vh;
+  height: 8vh;
+}
+
+.header-center {
+  margin: 3vh 0 0 0;
+  width: 60vw;
+}
+
+
+
+
+.show {
+  width: 100vw;
+  max-width: 800px;
+  margin: 0 0 9vh 0;
+}
+
+.show-header {
+  margin: 2vw 0;
+  padding: 0 0 0 2vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.show-img {
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.show-info-container {
+  margin: 1vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.show-title {
+  font-weight: 800;
+  text-align: left;
+  text-shadow: 1px 1px 1px black;
+}
+
+.show-datum {
+  font-size: 50%;
+  text-align: left;
+  text-shadow: 1px 1px 1px black;
+}
+
+.show-summary {
+  width: 96%;
+  margin: 1vh 1vw;
+  padding: .5vh 1vw;
+  background-color: rgba(0,0,0,.2);
+  text-align: left;
+  font-size: 40%;
+}
+
+
+
+
+.footer {
+  position: absolute;
+  top: 92vh;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgba(0,0,0,.6);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50%;
+}
+
+
+
+
+.body {
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+
+
+
+
+.body-list {
+  width: 100vw;
+  max-width: 800px;
+  margin: 0 0 8vh 0;
+}
+
+.body-list-item {
+  height: 15vh;
+  margin: 1vh;
+  background-color: rgba(0,0,0,.2);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.body-list-img {
+  width: 12vh;
+  height: 100%;
+  background-position: left;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.body-list-info {
+  width: 80%;
+}
+
+.body-list-title {
+  font-size: 70%;
+  font-weight: 800;
+  text-align: left;
+}
+
+.body-list-datum {
+  font-size: 40%;
+  text-align: left;
+}
+

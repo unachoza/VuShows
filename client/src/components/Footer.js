@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Footer() {
-  return (
-    <footer>
-      Made with <span role="img" alt='heart' aria-label="Close">❤️</span> by Arianna Choza, Arleen Santana, MP Kozak & Sam Pryor
-    </footer>
+export default function Footer(props) {
+  return(
+    <div className='footer'>
+      <button onClick={props.handleBack}>&larr;</button>
+      <button onClick={props.handleLogout}>Log Out</button>
+    </div>
   )
 }
-
-export default Footer;

@@ -9,6 +9,7 @@ server.use(logger('dev'));
 server.use(express.static('public'));
 // server.use(express.static('./client/build'));
 server.use(bodyParser.json());
+// server.use(bodyParser.json({limit: '5000'}));
 server.use(bodyParser.urlencoded({ extended: false }));
 
 const PORT = process.env.PORT || 3001;
@@ -28,3 +29,5 @@ server.use('*', (req, res) => {
     message: 'Endpoint not found!',
   });
 });
+
+

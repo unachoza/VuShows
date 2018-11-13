@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Login extends Component {
+export default class Login extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -24,34 +24,37 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <p>Log In:</p>
-        <br />
-        <form onSubmit={this.handleSubmit}>
-          <input
-            name='username'
-            type='text'
-            placeholder='username'
-            value={this.state.username}
-            onChange={this.handleChangeForm}
-          />
-          <br />
-          <input
-            name='password'
-            type='password'
-            placeholder='password'
-            value={this.state.password}
-            onChange={this.handleChangeForm}
-          />
-          <br /><br />
-          <button>enter</button>
-        </form>
-        <div>
-          <button onClick={this.props.createLogin}>create account</button>
+      <div className='login'>
+        <div className='login-header'>
+          <div className='icon logo'/>
+        </div>
+        <div className='login-form'>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              name='username'
+              type='text'
+              placeholder='username'
+              value={this.state.username}
+              onChange={this.handleChangeForm}
+            />
+            <input
+              name='password'
+              type='password'
+              placeholder='password'
+              value={this.state.password}
+              onChange={this.handleChangeForm}
+            />
+            <button>enter</button>
+          </form>
+        </div>
+        <div className='login-message'>
+          <p>{this.props.message}</p>
+        </div>
+        <div className='login-footer'>
+          <h6>No Account?</h6>
+          <button onClick={this.props.createLogin}>click here</button>
         </div>
       </div>
     );
   }
 }
-
-export default Login;

@@ -1,7 +1,58 @@
 * {
+  /*border: 1px solid white;*/
   margin: 0;
   padding: 0;
   font-family: helvetica, sans-serif;
   text-align: center;
-  color: #000000;
+  font-size: inherit;
+}
+
+body {
+  font-size: 5vh;
+  color: white;
+}
+
+form {
+
+}
+
+input {
+  width: 80%;
+  margin: 1vmin 0;
+  padding: 1vmin;
+  background-color: rgba(0,0,0,.4);
+  border: 1px solid black;
+  border-radius: 2vmin;
+  color: white;
+  -webkit-appearance: none;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,.6);
+  font-style: italic;
+}
+
+input::value {
+  color: white;
+}
+
+button {
+  margin: 1vmin;
+  padding: 1vmin 4vmin;
+  background-color: rgba(255,255,255,.8);
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: .5vmin .5vmin 3vmin;
+  color: black;
+  font-weight: 600;
+}
+
+button:active {
+  transform: translateY(2px);
+  background-color: rgba(255,255,255,.7);
+  box-shadow: .5vmin .5vmin 5vmin;
+}
+
+li {
+  list-style: none;
 }
