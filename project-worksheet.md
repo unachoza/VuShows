@@ -22,6 +22,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 We have created an app that can search an API for TV shows and information about the seasons and episodes. This app allows the user to create a secure account with a user name and password. Once logged in, a user can search for a TV show and click on a list of search results pulled from the API and add these to their watch list. A user can log out and log back in to see their watch list is saved to their account. 
 
 ## Wireframes
+https://res.cloudinary.com/dh41vh9dx/image/upload/v1541446190/Image_from_iOS.jpg
 
 https://res.cloudinary.com/dh41vh9dx/image/upload/v1542123015/Image_from_iOS_2.jpg
 
@@ -93,18 +94,18 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Wire Framing and App Design | H | 4hrs| 4hrs | 4hrs |
 | Creating Database | H | 6hrs| 3.5hrs | 12hr|
 | Rendering Components | H | 8hrs| 3hr | 9hr|
-| Collecting and Parsing API data | H | 5hrs| X | 4hrs |
+| Collecting and Parsing API data | H | 5hrs| 4hrs | 4hrs |
 | CRUD Functionality | H | 5hrs| 1h | 6hrs |
-| Header with Search Bar | H | 8hrs| X | 4hrs |
+| Header with Search Bar | H | 8hrs| 4hrs| 4hrs |
 | Front End Design | H | 10hrs| X | 10hrs |
 | Algrhythmic Sorting and Concatination  | H | 10hrs| X | X |
 | Artistry and CSS  | M | 12hrs| 2h | 6hrs |
-| Local Storage and User Faves | M | 7hrs| X | 7hrs |
-| CSS Animations | L | 6hrs| X | X |
-| User Authentication & Hashing | M | X | 6hrs | 10hrs |
-| Group Think / Merging | L | X| 4hrs | 4hrs |
-| Experimenting | L | X| 1hr | 3hrs |
-| Total | N/A | 81 | 2 | 71 |
+| Local Storage and User Faves | M | 7hrs| 7hrs | 7hrs |
+| CSS Animations | L | 6hrs| 2hrs | 2hrs |
+| User Authentication & Hashing | M | 6hrs | 6hrs | 10hrs |
+| Group Think / Merging | L | 4hrs | 4hrs | 4hrs |
+| Experimenting | L | 0 | 1hr | 3hrs |
+| Total | N/A | 81 | 2 | 73 |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
