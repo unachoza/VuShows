@@ -51,18 +51,14 @@ class TvSeasonList extends Component {
     let showid = this.props.tvshow.showid
     let seasonnumber = this.state.seasonnumber
     if (this.state.needsLoading) {
-     // console.log(this.state.needsLoading)
         this.setState(prevState => ({
           needsLoading: false
         }))
-      // console.log(this.state.needsLoading)
       fetch(`https://api.themoviedb.org/3/tv/${showid}/season/${seasonnumber}?api_key=43caac628b4f73785a588143ec291dbe&language=en-US`)
         .then(response => response.json())
         .then(episodedata => this.setState({ episodedata })
         );
-      // console.log(this.state.needsLoading, 'after render')
     }
-    //console.log(this.state.needsLoading)
     if(this.state.episodedata.episodes) {
       return this.state.episodedata.episodes.map(episodes => {
         return (

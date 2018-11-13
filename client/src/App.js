@@ -129,14 +129,9 @@ class App extends Component {
   }
 
   render() {
-    // console.log(this.state)
     const { focus } = this.state;
-
     return (
       <div>
-        <div>
-          <h1>TV</h1>
-        </div>
         <div>
           {this.showFocus(focus)}
         </div>

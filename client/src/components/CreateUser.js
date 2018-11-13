@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class CreateUser extends Component {
+export default class CreateUser extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -17,7 +17,7 @@ class CreateUser extends Component {
     if (this.state.password === this.state.password2) {
       this.props.handleNewUser(this.state.username, this.state.password);
     } else {
-      this.props.handleFocus('createAccount', 'Passwords Must Match.')
+      this.props.handleFocus('createAccount', 'Passwords Must Match')
     }
   }
 
@@ -29,39 +29,44 @@ class CreateUser extends Component {
 
   render() {
     return (
-      <div>
-        <p>Create User Account:</p>
-        <br />
-        <form onSubmit={this.handleSubmit}>
-          <input
-            name='username'
-            type='text'
-            placeholder='username'
-            value={this.state.username}
-            onChange={this.handleChangeForm}
-          />
-          <br />
-          <input
-            name='password'
-            type='password'
-            placeholder='password'
-            value={this.state.password}
-            onChange={this.handleChangeForm}
-          />
-          <br />
-          <input
-            name='password2'
-            type='password'
-            placeholder='retype password'
-            value={this.state.password2}
-            onChange={this.handleChangeForm}
-          />
-          <br /><br />
-          <button>submit</button>
-        </form>
+      <div className='login'>
+        <div className='login-header'>
+          <div className='icon logo'/>
+        </div>
+        <div className='login-form'>
+          <h1>Create Account:</h1>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              name='username'
+              type='text'
+              placeholder='username'
+              value={this.state.username}
+              onChange={this.handleChangeForm}
+            />
+            <input
+              name='password'
+              type='password'
+              placeholder='password'
+              value={this.state.password}
+              onChange={this.handleChangeForm}
+            />
+            <input
+              name='password2'
+              type='password'
+              placeholder='retype password'
+              value={this.state.password2}
+              onChange={this.handleChangeForm}
+            />
+            <button>submit</button>
+          </form>
+        </div>
+        <div className='login-message'>
+          <p>{this.props.message}</p>
+        </div>
+        <div className='login-footer'>
+          <button onClick={() => this.props.handleFocus('login', '')}>cancel</button>
+        </div>
       </div>
     );
   }
 }
-
-export default CreateUser;
