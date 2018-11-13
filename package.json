@@ -1,5 +1,5 @@
 {
-  "name": "crypt",
+  "name": "Vu",
   "version": "1.0.0",
   "description": "null",
   "main": "server.js",
@@ -10,9 +10,10 @@
     "url": ""
   },
   "scripts": {
+    "db": "psql -f db/schema/schema.sql && psql -f db/seed/seed.sql",
     "start": "node server.js",
-    "server": "node server.js",
-    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "debugger": "DEBUG=: nodemon server.js",
     "heroku-postbuild": "npm install && cd client && npm install --only-dev && npm install && npm run build"

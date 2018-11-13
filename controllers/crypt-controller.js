@@ -1,9 +1,8 @@
 const { Crypt, Tv } = require('../models/crypt.js');
 const cryptController = {};
 const bcrypt = require('bcrypt');
-const saltRounds = 10;
-const valid = 60000 * 60 * 24 * 7;
-// const valid = 60000;
+const saltRounds = 2;
+const valid = 60000 * 60 * 24 * 1;
 
 
 ///////////////////////////////////////
@@ -40,51 +39,25 @@ const valid = 60000 * 60 * 24 * 7;
   };
 
 
-// Get Admin
-  // cryptController.adminIndex = (req, res) => {
-  //   Crypt.getAdmin()
-  //     .then(data => {
-  //       res.json({
-  //         message: 'ok',
-  //         data: data
-  //       });
-  //     })
-  //     .catch(err => {
-  //       res.status(500).json({err});
-  //     });
-  // };
-
-
-// Store Admin Password
-  // cryptController.adminCreate = (req, res) => {
-  //   const password = req.body.password;
-  //   bcrypt.hash(req.body.password, saltRounds, (err, hash) => {
-  //     Crypt.storeAdmin(hash)
-  //       .then(res => {
-  //         res.json({
-  //           message: 'admin hash created'
-  //         });
-  //       })
-  //       .catch(err => {
-  //         res.status(500).json({err});
-  //       });
-  //   });
-  // };
-
-
 // Master Reset: Delete All Tokens And Users(!) [password: iamtheeggman]
   cryptController.uberDestroy = (req, res) => {
     Crypt.getAdmin()
       .then(data => {
         bcrypt.compare(req.params.password, data.hash, (err, same) => {
           if (same) {
-            Crypt.deleteTokens()
+            Crypt.deleteFaves()
               .then(del => {
-                Crypt.deleteUsers()
+                Crypt.deleteShows()
                   .then(del => {
-                    res.json({
-                      message: 'i am the walrus'
-                    });
+                    Crypt.deleteTokens()
+                      .then(del => {
+                        Crypt.deleteUsers()
+                          .then(del => {
+                            res.json({
+                              message: 'i am the walrus'
+                            });
+                          });
+                      });
                   });
               });
           } else {
@@ -302,10 +275,10 @@ const valid = 60000 * 60 * 24 * 7;
         } else {
           bcrypt.compare(req.params.token, data.hash, (err, same) => {
             if (same) {
-              Tv.index()
+              Tv.indexShows()
                 .then(data => {
                   res.json({
-                    message: 'ok',
+                    message: 'All Shows From Db',
                     status: true,
                     data: data
                   });
@@ -343,11 +316,10 @@ const valid = 60000 * 60 * 24 * 7;
         } else {
           bcrypt.compare(req.params.token, data.hash, (err, same) => {
             if (same) {
-              Tv.single(req.params.id)
+              Tv.show(req.params.id)
                 .then(data => {
-                  console.log(data)
                   res.json({
-                    message: 'ok',
+                    message: 'Single Show From Db',
                     status: true,
                     data: data
                   });
@@ -367,26 +339,334 @@ const valid = 60000 * 60 * 24 * 7;
   };
 
 
-
-
-
-
-
-// Add Show
+// Add Show To DB
   cryptController.addShow = (req, res) => {
-
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddres;
+    Crypt.getToken(ip)
+      .then(data => {
+        const tstamp = data.tstamp;
+        const now = Number(new Date());
+        if (now - tstamp >= valid) {
+          Crypt.destroyTokens(data.user_id)
+            .then(ok => {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            });
+        } else {
+          bcrypt.compare(req.params.token, data.hash, (err, same) => {
+            if (same) {
+              Tv.showByDbId(req.body.db_id)
+                .then(redundant => {
+                  const data = req.body;
+                  if (redundant) {
+                    Tv.updateShow({
+                      db_id: data.db_id,
+                      title: data.title,
+                      summary: data.summary,
+                      air_start: data.air_start,
+                      air_end: data.air_end,
+                      popularity: data.popularity,
+                      rating: data.rating,
+                      img: data.img,
+                      img_bg: data.img_bg,
+                      network: data.network,
+                      seasons: data.seasons,
+                      episodes: data.episodes
+                    }, redundant.id)
+                      .then(update => {
+                        res.json({
+                          message: 'Db Entry Updated',
+                          status: true,
+                          data: update
+                        });
+                      });
+                  } else {
+                    Tv.addShow({
+                      db_id: data.db_id,
+                      title: data.title,
+                      summary: data.summary,
+                      air_start: data.air_start,
+                      air_end: data.air_end,
+                      popularity: data.popularity,
+                      rating: data.rating,
+                      img: data.img,
+                      img_bg: data.img_bg,
+                      network: data.network,
+                      seasons: data.seasons,
+                      episodes: data.episodes
+                    })
+                      .then(data => {
+                        res.json({
+                          message: 'Added To Db',
+                          status: true,
+                          data: data
+                        });
+                      });
+                  };
+                });
+            } else {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            };
+          });
+        };
+      })
+      .catch(err => {
+        res.status(500).json({err});
+      });
   };
 
 
-// Update Show
-  cryptController.updateShow = (req, res) => {
-
+// Add Episodes To DB
+  cryptController.addEpisodes = (req, res) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddres;
+    Crypt.getToken(ip)
+      .then(data => {
+        const tstamp = data.tstamp;
+        const now = Number(new Date());
+        if (now - tstamp >= valid) {
+          Crypt.destroyTokens(data.user_id)
+            .then(ok => {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            });
+        } else {
+          bcrypt.compare(req.params.token, data.hash, (err, same) => {
+            if (same) {
+              Tv.episodeByDbId(req.body.db_episode_id)
+                .then(redundant => {
+                  const data = req.body;
+                  if (redundant) {
+                    Tv.updateEpisode({
+                      db_id: data.db_id,
+                      db_episode_id: data.db_episode_id,
+                      name: data.name,
+                      summary: data.summary,
+                      season: data.season,
+                      episode: data.episode,
+                      air_date: data.air_date,
+                      rating:  data.rating,
+                      img: data.img
+                    }, redundant.id)
+                      .then(update => {
+                        res.json({
+                          message: 'Db Entry Updated',
+                          status: true,
+                          data: update
+                        });
+                      });
+                  } else {
+                    Tv.addEpisode({
+                      db_id: data.db_id,
+                      db_episode_id: data.db_episode_id,
+                      name: data.name,
+                      summary: data.summary,
+                      season: data.season,
+                      episode: data.episode,
+                      air_date: data.air_date,
+                      rating:  data.rating,
+                      img: data.img
+                    }, req.params.id)
+                      .then(data => {
+                        res.json({
+                          message: 'Added To Db',
+                          status: true,
+                          data: data
+                        });
+                      });
+                  };
+                });
+            } else {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            };
+          });
+        };
+      })
+      .catch(err => {
+        res.status(500).json({err});
+      });
   };
 
 
-// Remove Show
-  cryptController.destroyShow = (req, res) => {
+// Get Episodes By Show ID
+  cryptController.getEpisodes = (req, res) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddres;
+    Crypt.getToken(ip)
+      .then(data => {
+        const tstamp = data.tstamp;
+        const now = Number(new Date());
+        if (now - tstamp >= valid) {
+          Crypt.destroyTokens(data.user_id)
+            .then(ok => {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            });
+        } else {
+          bcrypt.compare(req.params.token, data.hash, (err, same) => {
+            if (same) {
+              Tv.episodes(req.params.id)
+                .then(data => {
+                  res.json({
+                    message: 'Episodes From DB By Show ID',
+                    status: true,
+                    data: data
+                  });
+                });
+            } else {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            };
+          });
+        };
+      })
+      .catch(err => {
+        res.status(500).json({err});
+      });
+  };
 
+
+// Get Faves
+  cryptController.getFaves = (req, res) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddres;
+    Crypt.getToken(ip)
+      .then(data => {
+        const tstamp = data.tstamp;
+        const now = Number(new Date());
+        if (now - tstamp >= valid) {
+          Crypt.destroyTokens(data.user_id)
+            .then(ok => {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            });
+        } else {
+          bcrypt.compare(req.params.token, data.hash, (err, same) => {
+            if (same) {
+              Tv.getFaves(data.user_id)
+                .then(data => {
+                  res.json({
+                    message: 'User Faves From Db',
+                    status: true,
+                    data: data
+                  });
+                });
+            } else {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            };
+          });
+        };
+      })
+      .catch(err => {
+        res.status(500).json({err});
+      });
+  };
+
+
+// Add Fave
+  cryptController.addFave = (req, res) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddres;
+    Crypt.getToken(ip)
+      .then(data => {
+        const tstamp = data.tstamp;
+        const now = Number(new Date());
+        if (now - tstamp >= valid) {
+          Crypt.destroyTokens(data.user_id)
+            .then(ok => {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            });
+        } else {
+          bcrypt.compare(req.params.token, data.hash, (err, same) => {
+            if (same) {
+              Tv.getFaveByIds(data.user_id, req.body.show_id)
+                .then(redundant => {
+                  if (redundant) {
+                    res.json({
+                      message: 'Show Already In Faves',
+                      status: false
+                    });
+                  } else {
+                    Tv.addFave(data.user_id, req.body.show_id)
+                      .then(data => {
+                        res.json({
+                          message: 'Show Added To Faves',
+                          status: true,
+                          data: data
+                        });
+                      });
+                    };
+                });
+            } else {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            };
+          });
+        };
+      })
+      .catch(err => {
+        res.status(500).json({err});
+      });
+  };
+
+
+// Remove Fave
+  cryptController.removeFave = (req, res) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddres;
+    Crypt.getToken(ip)
+      .then(data => {
+        const tstamp = data.tstamp;
+        const now = Number(new Date());
+        if (now - tstamp >= valid) {
+          Crypt.destroyTokens(data.user_id)
+            .then(ok => {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            });
+        } else {
+          bcrypt.compare(req.params.token, data.hash, (err, same) => {
+            if (same) {
+              Tv.destroyFave(req.params.id)
+                .then(data => {
+                  res.json({
+                    message: 'Show Removed From Faves',
+                    status: true
+                  });
+                });
+            } else {
+              res.json({
+                message: 'Token Is Invalid',
+                status: false
+              });
+            };
+          });
+        };
+      })
+      .catch(err => {
+        res.status(500).json({err});
+      });
   };
 
 

@@ -5,7 +5,7 @@ import CreateUser from './components/CreateUser.js';
 import Login from './components/Login.js';
 import Main from './components/Main.js';
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -54,6 +54,9 @@ class App extends Component {
   }
 
   handleLogin(user, pass) {
+    this.setState(prevState => ({
+      focus: 'loading'
+    }))
     axios.post('/db/login', {
       username: user,
       password: pass
@@ -61,15 +64,15 @@ class App extends Component {
       .then(res => {
         const token = res.data.token;
         const message = !token ? res.data.message : '';
-        const focus = token ? false : this.state.focus;
+        const focus = token ? false : 'login';
         localStorage.setItem('token', token);
         localStorage.setItem('user', user);
         this.setState(prevState => ({
           token, user, message, focus
         }));
-        if (token) {
-          this.checkToken();
-        }
+        // if (token) {
+        //   this.checkToken();
+        // }
       })
       .catch(err => console.log(err));
   }
@@ -118,11 +121,15 @@ class App extends Component {
   showFocus(focus) {
     switch(focus) {
       case 'loading' :
-        return <div>Loading...</div>
+        return (
+          <div className='loading'>
+            <span className='loading-spinning' role='img' aria-label='#'>&#128250;</span>
+          </div>
+        )
       case 'login' :
-        return <Login handleLogin={this.handleLogin} createLogin={() => this.handleFocus('createAccount', '')}/>;
+        return <Login handleLogin={this.handleLogin} createLogin={() => this.handleFocus('createAccount', '')} message={this.state.message}/>;
       case 'createAccount' :
-        return <CreateUser handleNewUser={this.handleNewUser} handleFocus={this.handleFocus}/>;
+        return <CreateUser handleNewUser={this.handleNewUser} handleFocus={this.handleFocus} message={this.state.message}/>;
       default :
         return <Main user={this.state.user} token={this.state.token} handleLogout={this.handleLogout}/>;
     }
@@ -130,17 +137,11 @@ class App extends Component {
 
   render() {
     const { focus } = this.state;
+
     return (
-      <div>
-        <div>
+      <div className='App'>
           {this.showFocus(focus)}
-        </div>
-        <div>
-          {this.state.message}
-        </div>
       </div>
     );
   }
 }
-
-export default App;
